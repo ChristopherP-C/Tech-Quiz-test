@@ -15,7 +15,7 @@
     "seed": "cd server && npm run seed",
     "render-build": "npm install && npm run build",
     "cypress": "cypress open",
-    "test": "cypress run --component",
+    "test": "cypress run --component && cypress run --e2e",
     "test-gui": "npx cypress open --detached"
   },
   "keywords": [],

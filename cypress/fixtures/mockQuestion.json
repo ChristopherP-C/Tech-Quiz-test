@@ -1,12 +1,12 @@
 [
-{
-    "_id": "5f5f3b3b7f3b3b3b3b3b3b3b",
-    "question": "testing question",
-    "answers": [
-        { "text": "false", "isCorrect": false },
-        { "text": "true", "isCorrect": true },
-        { "text": "3", "isCorrect": false },
-        { "text": "3.0", "isCorrect": false }
-    ]
-}
+    {
+        "_id": "5f5f3b3b7f3b3b3b3b3b3b3b",
+        "question": "testing question",
+        "answers": [
+            { "text": "false", "isCorrect": false },
+            { "text": "true", "isCorrect": true },
+            { "text": "3", "isCorrect": false },
+            { "text": "3.0", "isCorrect": false }
+        ]
+    }
 ]
