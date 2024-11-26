@@ -46,7 +46,7 @@ const Quiz = () => {
 
   if (!quizStarted) {
     return (
-      <div className="p-4 text-center">
+      <div className="p-4 text-center" data-cy="start">
         <button className="btn btn-primary d-inline-block mx-auto" onClick={handleStartQuiz}>
           Start Quiz
         </button>
@@ -56,7 +56,7 @@ const Quiz = () => {
 
   if (quizCompleted) {
     return (
-      <div className="card p-4 text-center">
+      <div className="card p-4 text-center" data-cy="completed">
         <h2>Quiz Completed</h2>
         <div className="alert alert-success">
           Your score: {score}/{questions.length}
@@ -81,9 +81,9 @@ const Quiz = () => {
   const currentQuestion = questions[currentQuestionIndex];
 
   return (
-    <div className='card p-4'>
-      <h2>{currentQuestion.question}</h2>
-      <div className="mt-3">
+    <div className='card p-4' data-cy="quiz">
+      <h2 data-cy="question">{currentQuestion.question}</h2>
+      <div className="mt-3" data-cy="answers">
       {currentQuestion.answers.map((answer, index) => (
         <div key={index} className="d-flex align-items-center mb-2">
           <button className="btn btn-primary" onClick={() => handleAnswerClick(answer.isCorrect)}>{index + 1}</button>
